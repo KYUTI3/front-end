@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Navbar{
+
+display: flex;
+justify-content: space-between;
+
+}
+
+.Card{
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+  }
+
+    }

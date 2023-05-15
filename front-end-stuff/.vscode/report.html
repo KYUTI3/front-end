@@ -1,0 +1,35 @@
+<html> 
+<form>
+    <label for="name">Name of Virus:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <div class= "submit"> onclick="click()" <input type="submit" value="Submit"> </div>
+</form>
+
+<script>
+
+function click (){
+    
+var text = document.getElementById("name").value;
+console.log(text);
+let url = 'http://localhost:8080/CorpusBackend-1.0-SNAPSHOT/api/map';
+
+fetch(url, {
+  method: "POST",
+  body: JSON.stringify({
+    date: 10,
+    latitude:?,
+    longitude: ?,
+    name : text
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+  .then((json) => console.log(json));
+
+
+}
+
+</script>
+
+</html>
